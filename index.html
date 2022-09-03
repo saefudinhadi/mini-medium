@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+    <style>
+      #contents-2 {
+        background-color: chartreuse;
+      }
+      #contents-3 {
+        background-color: floralwhite;
+      }
+      #contents-4 {
+        background-color: chocolate;
+      }
+      #contents-5 {
+        background-color: cornsilk;
+      }
+      #contents-6 {
+        background-color: cyan;
+      }
+      #article-1 {
+        background-color: cornflowerblue;
+      }
+      #article-1-image {
+        background-color: gray;
+      }
+      #article-2 {
+        background-color: cornsilk;
+      }
+      #article-2-image {
+        background-color: goldenrod;
+      }
+      b {
+        font-variant-caps: all-petite-caps;
+      }
+      #contents {
+        padding: 2em;
+      }
+      #contents-1 {
+        margin: 1em 0;
+        padding: 1em;
+      }
+      #contents-1-number {
+        color: gray;
+        opacity: 0.25;
+      }
+      #contents-1-content {
+        padding-top: 0.5em;
+      }
+
+      #contents-1-content-title {
+        font-size: 1.2em;
+      }
+
+      #article {
+        background-color: #f7f9fa;
+        padding: 1em 2em;
+      }
+
+      #discover-and-footer {
+        padding: 1em 2em;
+      }
+
+      #discover-and-footer-topic-badge-1 {
+        margin: 0.5em 0.25em;
+      }
+
+      #discover-and-footer-title b,
+      #discover-and-footer-title-subscribtion b {
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+
+      /*Layout mobile*/
+      @media screen and (max-width: 1400px) {
+        #carousel-right {
+          display: none;
+        }
+        #carousel {
+          padding: 2em 1em;
+        }
+        #carousel-left-caption {
+          padding: 0 1em;
+        }
+        #carousel-left-button {
+          margin: 1em 0;
+        }
+      }
+
+      /*Layout website*/
+      @media screen and (min-width: 1400px) {
+        #carousel-left-button {
+          margin: 1em 0;
+          width: 20%;
+        }
+        #carousel {
+          margin: 2em 0;
+        }
+        #wave {
+          margin-top: -300px;
+        }
+        #contents-1 {
+          padding: 1em;
+        }
+      }
+    </style>
+    <title>Medium Mini</title>
+  </head>
+  <body>
+    <section id="navbar" style="background-color: #fbe192">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fbe192">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="./medium.png" alt="logo-medium" width="30" class="d-inline-block align-text-top" />
+            Medium Mini
+          </a>
+          <ul class="nav navbar-nav collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Our Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Membership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Write</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-secondary" type="submit" style="border-radius: 25px">Get Started</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <hr style="margin: 0px 0px; height: 3px; opacity: 0.5" />
+      <div id="carousel" class="row">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div id="carousel" class="row">
+                  <div id="carousel-left" class="col">
+                    <div class="row">
+                      <div class="col">
+                        <h1 class="display-3">
+                          <strong>Where good ideas find you</strong>
+                        </h1>
+                      </div>
+                    </div>
+                    <div id="carousel-left-caption" class="row">
+                      <p>
+                        People young and old are more concerned about current nutrition and health information. Extension resources aimed at helping you become better informed about healthy food, food safety and health are just a click
+                        away. <a href="#">Learn More</a>
+                      </p>
+                    </div>
+                    <div id="carousel-left-button" class="row">
+                      <button type="button" class="btn rounded-pill btn-outline-warning text-dark">Get Started</button>
+                    </div>
+                  </div>
+                  <div id="carousel-right" class="col">
+                    <img src="./wasa-crispbread-0P-cY9tUNnY-unsplash.jpg" alt="Lunch" class="img-fluid" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,256L1440,64L1440,320L0,320Z"></path></svg>
+    </section>
+    <section id="trending">
+      <div class="container">
+        <div id="title" class="row">
+          <h3><img src="./medium.png" alt="logo-medium" width="30" class="d-inline-block align-text-top" style="margin-right: 0.5em" />Trending on Medium Mini</h3>
+        </div>
+        <div id="contents" class="row">
+          <div id="contents-1" class="col-md-4">
+            <div class="row">
+              <div id="contents-1-number" class="col-2">
+                <h3><strong>01</strong></h3>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0">
+                      <img src="./medium.png" alt="logo-medium" width="17" class="d-inline-block align-text-top" />
+                      Sae in Skilvul
+                    </p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>How to use bootstrap for creating a website</strong></p>
+                </div>
+                <div id="contents-1-time-and-date" class="row">
+                  <p>Time and Date | 30 min read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contents-1" class="col-md-4">
+            <div class="row">
+              <div id="contents-1-number" class="col-2">
+                <h3><strong>02</strong></h3>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0">
+                      <img src="./medium.png" alt="logo-medium" width="17" class="d-inline-block align-text-top" />
+                      Sae in Skilvul
+                    </p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>How to use bootstrap for creating a website</strong></p>
+                </div>
+                <div id="contents-1-time-and-date" class="row">
+                  <p>Time and Date | 30 min read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contents-1" class="col-md-4">
+            <div class="row">
+              <div id="contents-1-number" class="col-2">
+                <h3><strong>03</strong></h3>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0">
+                      <img src="./medium.png" alt="logo-medium" width="17" class="d-inline-block align-text-top" />
+                      Sae in Skilvul
+                    </p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>How to use bootstrap for creating a website</strong></p>
+                </div>
+                <div id="contents-1-time-and-date" class="row">
+                  <p>Time and Date | 30 min read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contents-1" class="col-md-4">
+            <div class="row">
+              <div id="contents-1-number" class="col-2">
+                <h3><strong>04</strong></h3>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0">
+                      <img src="./medium.png" alt="logo-medium" width="17" class="d-inline-block align-text-top" />
+                      Sae in Skilvul
+                    </p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>How to use bootstrap for creating a website</strong></p>
+                </div>
+                <div id="contents-1-time-and-date" class="row">
+                  <p>Time and Date | 30 min read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contents-1" class="col-md-4">
+            <div class="row">
+              <div id="contents-1-number" class="col-2">
+                <h3><strong>05</strong></h3>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0">
+                      <img src="./medium.png" alt="logo-medium" width="17" class="d-inline-block align-text-top" />
+                      Sae in Skilvul
+                    </p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>How to use bootstrap for creating a website</strong></p>
+                </div>
+                <div id="contents-1-time-and-date" class="row">
+                  <p>Time and Date | 30 min read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contents-1" class="col-md-4">
+            <div class="row">
+              <div id="contents-1-number" class="col-2">
+                <h3><strong>06</strong></h3>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0">
+                      <img src="./medium.png" alt="logo-medium" width="17" class="d-inline-block align-text-top" />
+                      Sae in Skilvul
+                    </p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>How to use bootstrap for creating a website</strong></p>
+                </div>
+                <div id="contents-1-time-and-date" class="row">
+                  <p>Time and Date | 30 min read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr style="margin: 0px 0px; height: 3px; opacity: 0.5" />
+    <section id="multi-section">
+      <div class="container">
+        <div class="row">
+          <div id="article" class="col-md-8">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><img src="./medium.png" alt="logo-medium" width="20" class="d-inline-block align-text-top" style="margin-right: 0.5em" />Sae in Skilvul</h5>
+                    <p class="card-text" style="margin-bottom: 0">
+                      <strong>How is red wine heart healthy?</strong>
+                    </p>
+                    <p class="card-text">
+                      Antioxidants in red wine called polyphenols may help protect the lining of blood vessels in the heart. A polyphenol called resveratrol is one substance in red wine that's received attention for its health benefits.
+                    </p>
+                    <div class="card-text row">
+                      <div class="col-md-8">
+                        <small class="text-muted">August 28 | 10 min read</small>
+                      </div>
+                      <div class="col-md-4 text-end">
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./julian-hochgesang-FHb0kuiy8EI-unsplash.jpg" class="img-fluid rounded-start" alt="drink" />
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><img src="./medium.png" alt="logo-medium" width="20" class="d-inline-block align-text-top" style="margin-right: 0.5em" />Sae in Skilvul</h5>
+                    <p class="card-text" style="margin-bottom: 0">
+                      <strong>Benefits of Leafy Salad Greens</strong>
+                    </p>
+                    <p class="card-text">
+                      Leafy green vegetables are nutrient rich because leaves contain the light-catching, energy-converting machinery of plants. Salad greens contain Vitamin A, Vitamin C, beta-carotene, calcium, folate, fiber, and
+                      phytonutrients.
+                    </p>
+                    <div class="card-text row">
+                      <div class="col-md-8">
+                        <small class="text-muted">September 03 | 10 min read</small>
+                      </div>
+                      <div class="col-md-4 text-end">
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./jana-cRgTsJg8CjE-unsplash.jpg" class="img-fluid rounded-start" alt="foods" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="discover-and-footer" class="col-md-4">
+            <div id="discover-and-footer-title" class="row">
+              <b>discover more of what matters to you</b>
+            </div>
+            <div id="discover-and-footer-topic-badge" class="row align-items-center">
+              <div id="discover-and-footer-topic-badge-1" class="col-2">
+                <button type="button" class="btn btn-outline-secondary position-relative">
+                  Foods
+                  <!-- <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      99+
+                      <span class="visually-hidden">unread messages</span>
+                    </span> -->
+                </button>
+              </div>
+              <div id="discover-and-footer-topic-badge-1" class="col-2">
+                <button type="button" class="btn btn-outline-secondary btn-md position-relative">
+                  Sports
+                  <!-- <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      99+
+                      <span class="visually-hidden">unread messages</span>
+                    </span> -->
+                </button>
+              </div>
+              <div id="discover-and-footer-topic-badge-3" class="col-3" style="margin: 0.5em 0.5em">
+                <button type="button" class="btn btn-outline-secondary btn-md position-relative">
+                  Technology
+                  <!-- <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      99+
+                      <span class="visually-hidden">unread messages</span>
+                    </span> -->
+                </button>
+              </div>
+              <div id="discover-and-footer-topic-badge-4" class="col-2" style="margin: 0.5em 0.5em">
+                <button type="button" class="btn btn-outline-secondary btn-md position-relative">
+                  Movie
+                  <!-- <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      99+
+                      <span class="visually-hidden">unread messages</span>
+                    </span> -->
+                </button>
+              </div>
+              <div id="discover-and-footer-topic-badge-1" class="col-2">
+                <button type="button" class="btn btn-outline-secondary btn-md position-relative">
+                  Trends
+                  <!-- <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      99+
+                      <span class="visually-hidden">unread messages</span>
+                    </span> -->
+                </button>
+              </div>
+              <div id="discover-and-footer-topic-badge-6" class="col-2" style="margin: 0.5em 0 0.5em 0.5em">
+                <button type="button" class="btn btn-outline-secondary btn-md position-relative">
+                  Facts
+                  <!-- <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      99+
+                      <span class="visually-hidden">unread messages</span>
+                    </span> -->
+                </button>
+              </div>
+              <div id="discover-and-footer-topic-badge-7" class="col-2" style="margin: 0.5em 0">
+                <button type="button" class="btn btn-outline-secondary btn-md position-relative">
+                  News
+                  <!-- <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      99+
+                      <span class="visually-hidden">unread messages</span>
+                    </span> -->
+                </button>
+              </div>
+              <div class="col-4">
+                <a href="#">See all topics</a>
+              </div>
+            </div>
+            <div id="discover-and-footer-title-subscribtion">
+              <b>Subscribe for more</b>
+              <p>Get notified when we publish something new!</p>
+            </div>
+            <div class="col">
+              <form class="row g-3">
+                <div class="col-auto">
+                  <label for="inputPassword2" class="visually-hidden">Password</label>
+                  <input type="text" class="form-control" id="inputPassword2" placeholder="saik@gmail.com" />
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-warning">Submit</button>
+                </div>
+              </form>
+            </div>
+            <hr style="height: 3px; opacity: 0.5" />
+            <div id="footer" class="row align-items-center">
+              <div id="footer-help" class="col-2">
+                <small>
+                  <strong> Help </strong>
+                </small>
+              </div>
+              <div id="footer-status" class="col-2">
+                <small>
+                  <strong> Status </strong>
+                </small>
+              </div>
+              <div id="footer-writers" class="col-2">
+                <small>
+                  <strong> Writers </strong>
+                </small>
+              </div>
+              <div id="footer-blog" class="col-2">
+                <small>
+                  <strong> Blog </strong>
+                </small>
+              </div>
+              <div id="footer-privacy" class="col-2">
+                <small>
+                  <strong> Privacy </strong>
+                </small>
+              </div>
+              <div id="footer-term" class="col-2">
+                <small>
+                  <strong> Term </strong>
+                </small>
+              </div>
+              <div id="footer-about" class="col-2">
+                <small>
+                  <strong> About </strong>
+                </small>
+              </div>
+              <div class="row" style="margin-top: 1em">
+                <p>Created with <i class="bi bi-heart-fill"></i> By Saefudin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
